@@ -2,8 +2,9 @@
 
 ![SFHQ dataset sample images](https://raw.githubusercontent.com/SelfishGene/SFHQ-dataset/main/images/SFHQ_sample_4x8.jpg)
 
+## **Update**: A new and higher quality dataset of synthetic face images: [SFHQ-T2I-dataset](https://github.com/SelfishGene/SFHQ-T2I-dataset)
 
-This dataset consists of 4 parts, totaling ~425,000 curated high quality 1024x1024 synthetic face images.  
+The original SFHQ dataset consists of 4 parts, totaling ~425,000 curated high quality 1024x1024 synthetic face images.  
 It was created by "bringing to life" and turning to photorealistic face images from multiple "inspiration" sources (paintings, drawings, 3D models, text to image generators, etc) using a process similar to what is described [in this short twitter thread](https://twitter.com/DavidBeniaguev/status/1376020024511627273?s=20&t=kH9J5mV9hL8e3y8PruuB5Q). The process involves encoding the images into StyleGAN2 latent space and performing a small manipulation that turns each image into a photo-realistic image. These resulting candidate images are then further curated using a semi-manual semi-automatic process with the help of the lightweight [visual taste aprroximator](https://github.com/SelfishGene/visual_taste_approximator) tool
 
 The dataset also contains facial landmarks (an extended set of 110 landmark points) and face parsing semantic segmentation maps. An example script (`explore_dataset.py`) is provided ([live kaggle notebook here](https://www.kaggle.com/code/selfishgene/explore-synthetic-faces-hq-sfhq-dataset)) and demonstrates how to access landmarks, segmentation maps, and textually search withing the dataset (with CLIP image/text feature vectors), and also performs some exploratory analysis of the dataset.
